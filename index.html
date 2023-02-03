@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>粤省事健康码自动申报</title>
+	<!-- Meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<script>
+		addEventListener("load", function () { setTimeout(hideURLbar, 0); }, false); function hideURLbar() { window.scrollTo(0, 1); }
+	</script>
+	<!-- Meta tags -->
+	<!--stylesheets-->
+	<link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+	<!--//style sheet end here-->
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+</head>
+
+<body>
+	<div class="mid-class">
+		<div class="art-right-w3ls">
+			<h2>输入你的用户资料</h2>
+			<form action="https://fuck-yss-task.deginx.com/add_sql.php" method="post">
+				<div class="main">
+					<div class="form-left-to-w3l">
+						<input type="text" name="did" placeholder="did" required="">
+					</div>
+					<div class="form-left-to-w3l">
+						<input type="text" name="sid" placeholder="sid" required="">
+					</div>
+					<div class="form-left-to-w3l">
+						<input type="text" name="openid" placeholder="openid" required="">
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="btnn">
+					<button type="submit">提交</button>
+				</div>
+			</form>
+			<div class="w3layouts_more-buttn">
+				<h3>不知道怎么获取这些资料..?
+					<a style="color:#c6fdcd;" href="#content1">查看教程
+					</a>
+				</h3>
+			</div>
+			<!-- popup-->
+			<div id="content1" class="popup-effect">
+				<div class="popup">
+					<!--login form-->
+					<div class="letter-w3ls">
+						<h3>抓包过程</h3>
+						<p>1.打开抓包软件</p>
+						<p><a style="color: crimson;">2.抓包软件开启https抓取,然后安装证书</a></p>
+						<p>3.打开粤省事小程序</p>
+						<p>4.进入粤康码界面</p>
+						<p>5.开启抓包</p>
+						<p>6.进入健康情况申报</p>
+						<p>7.关闭抓包</p>
+						<br>
+						<h3>分析数据包</h3>
+						<p>1.找到 <a style="color: blueviolet;">https://zwms.gdbs.gov.cn/api/oss/miniprogramreport</a>
+							这个请求</p>
+						<p>2.然后来到<a style="color: darkmagenta;">请求头(Request Header)</a>,可以看到请求头中包含<a
+								style="color: blueviolet;">x-tif-did | x-tif-sid</a>
+							这两个变量,这两个变量的值就是我们要找的did和sid,我们把他记下来</p>
+						<p>3.最后去到<a style="color: darkmagenta;">请求主体(body或data)</a>,找到<a
+								style="color: blueviolet;">openid</a>这个变量,然后把他的值记下来,这个就是openid
+						</p>
+					</div>
+					<!--//login form-->
+					<a class="close" href="#">&times;</a>
+				</div>
+			</div>
+			<!-- //popup -->
+		</div>
+		<div class="art-left-w3ls">
+			<h1 class="header-w3ls">
+				粤省事健康码の自动申报
+			</h1>
+			<h3>目前默认申报城市[茂名]<br>如需其他城市,请联系站长Qq1309634881</h3>
+		</div>
+	</div>
+</body>
+
+</html>
